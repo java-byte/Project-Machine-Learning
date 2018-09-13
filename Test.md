@@ -16,7 +16,7 @@ where `w0` and `w1` are weight which we need to optimize so that we can fit best
 
 ` Gradient Descent is techniques to find the value of w0 and w1 using iterative process so that overall loss can be minimized`
 
-### Gradient Descent:
+#### Gradient Descent:
 
 Gradient descent is a first-order iterative optimization algorithm for finding the minimum of a function (Loss function). To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point. If instead one takes steps proportional to the positive of the gradient, one approaches a local maximum of that function; the procedure is then known as gradient ascent.
 
@@ -40,6 +40,13 @@ After that it will calculate derivative of cost function at that point which def
 
 The gradient descent then repeats this process, edging ever closer to the minimum.
 
+### Build an intuitive picture of how fitting a line corresponds to finding the (global) minimum of a function (the cost function).
+
+Below are the diagram which i made to explain how `Hypothesis function` tries to fit the points as we reach to global minimum of cost function.
+![Global minimum](IMG_20180913_092042289_PORTRAIT.jpg)
+![Global Minimum](IMG_20180913_091940286.jpg)
+
+
 ### Normal Equation:
 
 Normal equation is another approach for finding the global minimum or the weights (W) for which cost is minimum.
@@ -61,3 +68,11 @@ To implement Normal Equation
 * Using the following equation (X transpose * X) inverse times X transpose Y.
     * `W = (X_transpose*X)inverse*X_transpose*Y`
 * If you compute above equation you will get value of `W` which minimize cost function.
+
+### Comparision Between Gradient descent and Normal Equation.
+
+Gradient Descent | Normal Equation
+------------ | -------------
+We need to choose learning rate very efficiently so that cost converse to global minimum. | There is no need of choosing learning rate.
+It's iterative process, need many iteration which make it slow. | No iteration required for normal equation.
+Works well when features are large (above millions). | Works well for small amount of features as normal equation needs to compute inverse.
