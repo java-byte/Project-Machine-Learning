@@ -1,2 +1,3 @@
-# Udacity-Machine-Learning
-Gradient Descent and Normal Equation - Comparision
+# Machine-Learning
+**Gradient Descent and Normal Equation - Comparision
+**Google Location clustering
