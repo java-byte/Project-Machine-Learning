@@ -1,4 +1,2 @@
 # Machine-Learning
-**Gradient Descent and Normal Equation - Comparision
-
-**Google Location clustering
+**I will include Machine Learning related project in this repo.
